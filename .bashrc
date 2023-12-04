@@ -121,3 +121,5 @@ eval "$(starship init bash)"
 alias clear="printf '\E[H\E[3J'"
 
 eval "$(ssh-agent -s)"
+
+test -r /home/mawio/.opam/opam-init/init.sh && . /home/mawio/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
