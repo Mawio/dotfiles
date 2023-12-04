@@ -119,3 +119,5 @@ fi
 eval "$(starship init bash)"
 
 alias clear="printf '\E[H\E[3J'"
+
+eval "$(ssh-agent -s)"
