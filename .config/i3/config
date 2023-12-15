@@ -261,6 +261,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+Ctrl+h resize shrink width 10 px or 10 ppt
+bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
+bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
+bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
+
 exec_always feh --bg-fill ~/Pictures/wallpaper.jpg
 
 bindsym $mod+d exec ~/.config/rofi/launchers/type-1/launcher.sh
