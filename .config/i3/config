@@ -287,8 +287,7 @@ bindsym XF86AudioPrev exec playerctl --player=PLAYER_NAME previous
 
 # disable capslock
 exec_always setxkbmap -option ctrl:nocaps
-exec_always xmodmap -e "clear lock" #disable caps lock switch
-exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
+exec_always xcape -e 'Control_L=Escape'
 
 # enable keyboard led
 exec_always xset led on
