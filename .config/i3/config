@@ -43,7 +43,7 @@ hide_edge_borders both
 #         Gaps
 ###############################
 # Set inner/outer gaps
-gaps inner 7
+gaps inner 3
 gaps outer 0
 
 ##############################
@@ -201,26 +201,27 @@ for_window [class=LibreWolf] focus
 assign [class="(?)firefox"] $ws2
 for_window [class=firefox] focus
 
-assign [class="Google-chrome"] $ws2
-for_window [class=Google-chrome] focus
+# assign [class="Google-chrome"] $ws2
+# for_window [class=Google-chrome] focus
 
 # (W-3)
-# ========== Social ===========
+# ========== Media ===========
 
-assign [class="discord"] $ws3
-for_window [class=discord] focus
-
-assign [class="TelegramDesktop"] $ws3
-for_window [class=TelegramDesktop] focus
+assign [class="Stremio"] $ws3
+for_window [class=Stremio] focus
 
 # (W-4)
-# ========== Spotify ===========
+# ========== Discord ===========
 
-assign [class="Spotify"] $ws4
-for_window [class=Spotify] focus
+assign [class="discord"] $ws4
+for_window [class=discord] focus
+
 
 # (W-5)
-# ==========  ===========
+# ========== Spotify ===========
+
+assign [class="Spotify"] $ws5
+for_window [class=Spotify] focus
 
 # (W-6)
 # ==========  ===========

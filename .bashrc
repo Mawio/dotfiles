@@ -118,8 +118,15 @@ fi
 
 eval "$(starship init bash)"
 
-alias clear="printf '\E[H\E[3J'"
+# alias clear="printf '\E[H\E[3J'"
 
 eval "$(ssh-agent -s)" > /dev/null
+ssh-add ~/.ssh/* > /dev/null 2>&1
 
 test -r /home/mawio/.opam/opam-init/init.sh && . /home/mawio/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+bind '"":"clear\n"'
+
+bind '"":"~/.scripts/tmux-sessionizer\n"'
+
+bind '"":"nvim .\n"'
